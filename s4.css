@@ -1,0 +1,83 @@
+        body {
+            font-family: Times New Roman, serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            max-width: 1000px;
+            min-width: 80vw;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background-color: #00fff7;
+        }
+
+        .chat-log {
+            padding: 10px;
+            height: 60vh;
+            overflow-y: auto;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+        }
+
+        .message-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+
+        .user-message,
+        .bot-message {
+            background-color: rgb(210, 210, 210);
+            color: rgb(65, 65, 65);
+            padding: 8px;
+            border-radius: 5px;
+            width: 45%; /* Adjust the width as needed */
+            box-sizing: border-box;
+            margin-right: 5px; /* Add margin between messages */
+        }
+
+        .bot-message {
+            background-color: rgb(65, 65, 65);
+            color: white;
+        }
+
+        .input-container {
+            padding: 10px;
+            background-color: rgb(225, 225, 225);
+            border-top: 1px solid #ccc;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #user-input {
+            width: 70%; /* Adjust the width as needed */
+            height: 40px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            color: black;
+            margin-right: 5px; /* Add margin between input and button */
+        }
+
+        #send-button {
+            width: 25%; /* Adjust the width as needed */
+            background-color: orange;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        .code-green {
+            color: rgb(30, 197, 0);
+        }
